@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    background-image: url(./images/pattern-bg-desktop.png);
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 24px;
+    color: white;
+    top: 50px;
+    font-size: 36px;
+}
+
+.search-bar {
+    width: 100vw;
+    position: absolute;
+    top: 64px;
+    border: none;
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 500px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding-left: 16px;
+    color: hsl(0, 0%, 59%);
+}
+
+input:active {
+    color: black;
+}
+
+input::content {
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.loc-info {
+    margin-top: 44px;
+    width: 900px;
+    height: 130px;
+    background-color: white;
+    top: 154px;
+    position: absolute;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+    color: hsl(0, 0%, 59%);
+    border-radius: 8px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.info-cnt {
+    width: 200px;
+}
+
+#map {
+    height: 410px;
+    position: sticky;
+}
+
+.vr {
+    width: 1px;
+    background-color: hsl(0, 0%, 59%);
+    margin-right: 20px;
+}
+
+.inf {
+    margin-top: 12px;
+    color: hsl(0, 0%, 17%);
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .search-bar {
+        width: 100vw;
+        position: absolute;
+        top: 64px;
+        border: none;
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info {
+        width: 100vw;
+    }
+
+    .loc-info {
+        text-align: center;
+        width: 85vw;
+        height: 35vh;
+        flex-direction: column;
+        top: 124px;
+        padding: 18px;
+    }
+
+    .info-cnt {
+        width: 100%;
+    }
+
+    .vr {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    .inf {
+        margin-top: 6px;
+    }
+
+
+}
